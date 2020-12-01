@@ -1,0 +1,105 @@
+{
+   "FurnitureData":{
+      "f1":{
+  
+         "title":"Nashville",
+         "price":"$349.00",
+         "rating":4,
+         "colors":[
+            "gray",
+            "brown",
+            "yellow"
+         ],
+         "img":"assets/Furniture/sofa2.png",
+         "images":[
+            "assets/Furniture/sofa2.png",
+            "assets/Furniture/left.png",
+            "assets/Furniture/right.png",
+            "assets/Furniture/back.png"
+         ],
+         "description":"There are many variations of passages of Lorem Ipsum available, but the majority "
+      },
+      "f2":{
+      
+         "title":"Floor Lamp",
+         "price":"$129.00",
+         "rating":2,
+         "colors":[
+            "gray",
+            "brown",
+            "yellow"
+         ],
+         "img":"assets/Furniture/sofa.png",
+         "images":[
+            "assets/Furniture/sofa.png",
+            "assets/Furniture/left.png",
+            "assets/Furniture/right.png",
+            "assets/Furniture/back.png"
+         ],
+         "description":"All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary,"
+      },
+
+ "f3":{
+
+   "title": "Tripod Lamp",
+   "price":"$119.00",
+   "rating":4,
+   "colors": ["gray", "brown", "yellow" ],
+   "img":  "assets/Furniture/chair.png",
+   "images": [ 
+    "assets/Furniture/chair.png" ,
+    "assets/Furniture/left.png" ,
+     "assets/Furniture/right.png" ,
+    "assets/Furniture/back.png" 
+     ],
+   "description": "There are many variations of passages of Lorem Ipsum available, but the majority "
+ },
+
+"f4": {
+
+   "title": "Accent Chair",
+   "price":"$89.00",
+   "rating":5,
+   "colors": ["gray", "brown", "yellow" ],
+   "img":  "assets/Furniture/chair2.png",
+   "images": [
+   "assets/Furniture/chair2.png" ,
+     "assets/Furniture/left.png" ,
+     "assets/Furniture/right.png" ,
+   "assets/Furniture/back.png" 
+     ],
+   "description": "There are many variations of passages of Lorem Ipsum available, but the majority "
+ },
+  "f5":{
+   
+  "title": "Table Bar Stool",
+   "price":"$97.00",
+   "rating":4,
+   "colors": ["gray", "brown", "yellow" ],
+   "img":   "assets/Furniture/stool.png",
+   "images": [
+    "assets/Furniture/stool.png",
+    "assets/Furniture/left.png" ,
+    "assets/Furniture/right.png" ,
+     "assets/Furniture/back.png" 
+     ],
+   "description": "There are many variations of passages of Lorem Ipsum available, but the majority "
+ },
+  "f6":{
+ 
+   "title": "Bubble Chair",
+   "price":"$176.0",
+   "rating":3,
+   "colors": ["gray", "brown", "yellow" ],
+   "img":   "assets/Furniture/bubble.png",
+   "images": [
+     "assets/Furniture/bubble.png",
+    "assets/Furniture/left.png" ,
+     "assets/Furniture/right.png" ,
+     "assets/Furniture/back.png" 
+     ],
+   "description": "There are many variations of passages of Lorem Ipsum available, but the majority "
+ }
+   
+   }
+}
