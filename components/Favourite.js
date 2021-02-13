@@ -110,7 +110,8 @@ import {  LogBox } from "react-native";
         return (
             <SafeAreaView style={styles.conatiner} >
            {console.log("Check==>>",placedOrder)}
-                <Text style={{fontSize: 30, padding:10, alignSelf: 'center',color:"rgba(0,0,0,.6)" ,fontWeight:'bold'}} > {username}'s Wish List </Text>
+           <Text style={{fontSize: 30, padding:10, alignSelf: 'center',color:"rgba(0,0,0,.6)" ,fontWeight:'bold'}} >  Wish List </Text>
+                {/* <Text style={{fontSize: 30, padding:10, alignSelf: 'center',color:"rgba(0,0,0,.6)" ,fontWeight:'bold'}} > {username}'s Wish List </Text> */}
                 {/* <Text>{this.state.useremail}</Text> */}
             <ScrollView showsVerticalScrollIndicator={false} >
                 <FlatList

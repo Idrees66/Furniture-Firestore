@@ -35,7 +35,7 @@ export default class login extends Component {
 
     handleSubmit(){
       const {email,Password} = this.state;
-      this._storeData();
+      // this._storeData();
       this.userSignIn(email,Password);
   
     }
@@ -89,6 +89,7 @@ export default class login extends Component {
     userSignIn(email,pass){
       firebase.auth().signInWithEmailAndPassword(email, pass)
       .then(()=>{
+        console.log("Credentials verifed..")
         this.props.navigation.replace("Home")
         // {logout: this._logOff(),email: email, Password: pass}
       })
@@ -121,7 +122,9 @@ export default class login extends Component {
                   title="LOGIN"
                   // type="outline"
                   primary
-                  onPress={()=>this.handleSubmit()}
+                //  onPress={()=>this.handleSubmit()}
+                  //Direct Login without authentication
+                   onPress={()=>  this.props.navigation.replace("Home")}
                   buttonStyle={{backgroundColor:'#cc0e86',width:150,padding: 10,borderRadius:10,}}
                   titleStyle={{color:"white",fontWeight:'bold'}}
                 />

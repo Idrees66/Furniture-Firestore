@@ -51,6 +51,7 @@ export default class Gallery extends Component {
      
      componentDidMount() {
       // ignoreWarnings('Setting a timer');
+      console.log("Gallery Mounting")
         this.insert();
         // console.log("Home Screen Mounted", this.state.Mount)
         // this.connection();
@@ -60,8 +61,8 @@ export default class Gallery extends Component {
       }
 
       insert(){
-        if(!this.state.Mount)
-        console.log("Home Screen Mounted", this.state.Mount)
+        // if(!this.state.Mount)
+       // console.log("Home Screen Mounted", this.state.Mount)
         this.connection();
         this.checkUser();
         this.FetchFurniture();
@@ -73,7 +74,7 @@ export default class Gallery extends Component {
       connection(){
         if (!firebase.apps.length) {
             firebase.initializeApp(firebaseConfig);
-            console.log("DataBase Running..")
+            console.log("Gallery DataBase Running..")
         }
       }
 
@@ -104,16 +105,18 @@ export default class Gallery extends Component {
         const db = firebase.firestore();
         const fref = db.collection("FurnitureData")
         const querySnapshot = await fref.get();
+        console.log("Query Snap shot: ", querySnapshot)
         const tempFns = [];
         querySnapshot.forEach((doc) => {
             const id = doc.id;
             const data = doc.data();
             const cachedImg = FileSystem.documentDirectory+doc.id+".png"
             tempFns.push({id, ...data, cachedImg});
-          
+            console.log('Test Flag: ',data)
             });
             // console.log(tempFns)
             this.setState({FList: tempFns})
+           
             this.setState({tempFList : tempFns})
         // console.log("Snapshot: ", querySnapshot)
     }

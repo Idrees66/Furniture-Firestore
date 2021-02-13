@@ -122,8 +122,8 @@ export default class CustomerOrder extends Component {
         console.disableYellowBox = true;
         return (
             <SafeAreaView style={styles.conatiner} >
-           
-                <Text style={{fontSize: 30, padding:10, alignSelf: 'center',color:"rgba(0,0,0,.6)" ,fontWeight:'bold'}} > {username}'s Order </Text>
+                           <Text style={{fontSize: 30, padding:10, alignSelf: 'center',color:"rgba(0,0,0,.6)" ,fontWeight:'bold'}} > Orders </Text>
+                {/* <Text style={{fontSize: 30, padding:10, alignSelf: 'center',color:"rgba(0,0,0,.6)" ,fontWeight:'bold'}} > {username}'s Order </Text> */}
                 {/* <Text>{this.state.useremail}</Text> */}
 
                 <FlatList
