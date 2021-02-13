@@ -99,7 +99,7 @@ export default function Home() {
 
     function FetchData(){
       console.log("fetching..")
-      const db = firebase.firestore();
+      const db = new firebase.firestore();
       db.collection("FurnitureData").get().then((querySnapshot) => {
           const tempFns = [];
           querySnapshot.forEach((doc) => {
@@ -122,7 +122,7 @@ export default function Home() {
 
   async function FetchFurniture(){
     console.log("Fetching Home Furnitures...")
-    const db = firebase.firestore();
+    const db = new firebase.firestore();
     const fref = db.collection("FurnitureData")
     const querySnapshot = await fref.get();
     const tempFns = [];
